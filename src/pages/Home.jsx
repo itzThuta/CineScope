@@ -328,7 +328,7 @@ export default function Home() {
           <div className="flex items-center gap-3 ml-auto">
             {/* Only show Discover + Watchlist on md+ screens */}
             <div className="hidden md:flex items-center gap-3">
-              <Link to="/" className="text-sm font-medium">
+              <Link to="/home" className="text-sm font-medium">
                 Discover
               </Link>
               <Link
@@ -441,7 +441,7 @@ export default function Home() {
           {open && (
             <nav className="px-2 pb-3 flex flex-col gap-2 text-sm">
               <Link
-                to="/"
+                to="/home"
                 className="px-3 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800"
               >
                 Discover
