@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 /* ========= Logo ========= */
 function Logo({ className = "h-7 w-auto" }) {
@@ -456,7 +457,6 @@ export default function Home() {
           )}
         </div>
       </header>
-
       {/* ============ CONTENT ============ */}
       <main className="w-full px-2 sm:px-3 lg:px-4 py-6">
         <div className="flex items-center justify-between mb-4">
@@ -526,6 +526,58 @@ export default function Home() {
           </div>
         )} */}
       </main>
+      {/* ============ FOOTER ============ */}
+      return (
+      <footer className="bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 mt-10">
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+          {/* Left Section - Copyright */}
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
+            © 2025 <span className="font-semibold">Cinescope</span>. All rights
+            reserved.
+          </p>
+
+          {/* Middle Section - Developer Credit */}
+          <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-3 md:mt-0">
+            Developed by <span className="font-semibold">Thu Ta Zaw</span>
+          </p>
+
+          {/* Right Section - Social Links */}
+          <div className="flex items-center gap-4 mt-3 md:mt-0">
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/share/1DaMiLXuoH/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="text-zinc-600 dark:text-zinc-400 hover:text-blue-600 transition-colors"
+            >
+              <FaFacebook className="w-5 h-5" />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/itz_not_thuta?igsh=bDl6YWRhYnp0cnRr&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-zinc-600 dark:text-zinc-400 hover:text-pink-500 transition-colors"
+            >
+              <FaInstagram className="w-5 h-5" />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/thu-ta-zaw"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-zinc-600 dark:text-zinc-400 hover:text-blue-700 transition-colors"
+            >
+              <FaLinkedin className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
