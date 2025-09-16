@@ -527,7 +527,6 @@ export default function Home() {
         )} */}
       </main>
       {/* ============ FOOTER ============ */}
-      return (
       <footer className="bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 mt-10">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
           {/* Left Section - Copyright */}
